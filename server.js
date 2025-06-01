@@ -26,7 +26,7 @@ app.get('/movies', function(req, res){
     .get('http://'+backendHost+':3000/movies')
     .end(function(err, data) {
       if(data.status == 403){
-        res.send(403, '403 Forbidden');
+        res.status(403).send('403 Forbidden');
       } else {
         var movies = data.body;
         res.render('movies', { movies: movies} );

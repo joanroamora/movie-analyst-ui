@@ -1,8 +1,9 @@
 {
   "name": "movie-analyst-ui",
   "version": "1.0.0",
-  "description": "ui for the movie analyst website....im totally not ripping this off.......",
+  "description": "UI for the movie analyst website",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha"
   },
   "repository": {
@@ -16,8 +17,11 @@
   },
   "homepage": "https://github.com/juan-ruiz/movie-analyst-ui#readme",
   "dependencies": {
-    "ejs": "^2.5.7",
-    "express": "^4.15.4",
-    "superagent": "^3.6.0"
+    "ejs": "^3.1.9",
+    "express": "^4.18.4",
+    "superagent": "^8.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
   }
 }
